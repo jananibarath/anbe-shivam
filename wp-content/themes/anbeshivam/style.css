@@ -1,0 +1,278 @@
+/*
+Theme Name: AnbeShivam
+Theme URI: https://anbeshivam.in
+Author: AnbeShivam
+Description: Gutenberg-first lead generation theme for respectful religious item review and handling.
+Version: 1.0.0
+Requires at least: 6.4
+Tested up to: 6.5
+Requires PHP: 8.0
+Text Domain: anbeshivam
+*/
+
+:root {
+  --as-maroon: #5b1328;
+  --as-maroon-deep: #471021;
+  --as-sandal: #f4e7d2;
+  --as-gold: #b38a3d;
+  --as-bg: #f9f7f3;
+  --as-card: #ffffff;
+  --as-text: #24201d;
+  --as-muted: #5f5852;
+  --as-radius: 12px;
+  --as-shadow: 0 8px 20px rgba(54, 33, 17, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--as-bg);
+  color: var(--as-text);
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.wp-block-site-title {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  color: var(--as-maroon-deep);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--as-maroon);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--as-maroon-deep);
+}
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #eadfcf;
+}
+
+.site-header__inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.site-branding a {
+  text-decoration: none;
+  font-family: "Noto Serif", Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--as-maroon-deep);
+}
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: var(--as-text);
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus-visible {
+  color: var(--as-maroon);
+}
+
+.header-cta {
+  display: inline-block;
+  background: var(--as-maroon);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.header-cta:hover,
+.header-cta:focus-visible {
+  background: var(--as-maroon-deep);
+  color: #fff;
+}
+
+.site-main {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.site-main .entry-content > * {
+  margin-block-start: 0;
+  margin-block-end: 1.4rem;
+}
+
+.entry-content .wp-block-group.is-style-as-section {
+  border: 1px solid #efe5d7;
+  background: #fff;
+  border-radius: var(--as-radius);
+  box-shadow: var(--as-shadow);
+  padding: clamp(20px, 3vw, 32px);
+  margin-bottom: clamp(18px, 2.8vw, 28px);
+}
+
+.entry-content .wp-block-group.is-style-as-section h2 {
+  margin-top: 0;
+}
+
+.entry-content .wp-block-button__link,
+button,
+input[type="submit"] {
+  border-radius: 10px;
+  border: none;
+  padding: 0.76em 1.2em;
+  background: var(--as-maroon);
+  color: #fff;
+  font-weight: 600;
+}
+
+.entry-content .wp-block-button__link:hover,
+.entry-content .wp-block-button__link:focus-visible,
+button:hover,
+button:focus-visible,
+input[type="submit"]:hover,
+input[type="submit"]:focus-visible {
+  background: var(--as-maroon-deep);
+}
+
+.as-divider {
+  position: relative;
+  margin: 12px 0 22px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--as-gold), transparent);
+}
+
+.as-divider::after {
+  content: "✦";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--as-gold);
+  background: #fff;
+  padding: 0 8px;
+}
+
+.as-contact-form {
+  display: grid;
+  gap: 14px;
+}
+
+.as-field-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.as-contact-form label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.as-contact-form input,
+.as-contact-form textarea {
+  width: 100%;
+  margin-top: 6px;
+  border: 1px solid #d7c9b5;
+  border-radius: 8px;
+  padding: 10px;
+  font: inherit;
+  background: #fff;
+}
+
+.as-contact-form input:focus,
+.as-contact-form textarea:focus {
+  outline: 2px solid var(--as-gold);
+  outline-offset: 1px;
+}
+
+.as-form-note {
+  color: var(--as-muted);
+  font-size: 0.9rem;
+}
+
+.as-floating-whatsapp {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 99;
+}
+
+.as-floating-whatsapp a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1f7a45;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  box-shadow: var(--as-shadow);
+}
+
+.site-footer {
+  background: #fff;
+  border-top: 1px solid #eadfcf;
+  padding: 24px 20px;
+  text-align: center;
+  color: var(--as-muted);
+}
+
+@media (max-width: 960px) {
+  .site-header__inner {
+    flex-wrap: wrap;
+  }
+
+  .header-cta {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 781px) {
+  .main-navigation {
+    width: 100%;
+    order: 3;
+  }
+
+  .main-navigation ul {
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .as-field-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-content .wp-block-columns {
+    gap: 1rem;
+  }
+
+  .entry-content .wp-block-group.is-style-as-section {
+    padding: 18px;
+  }
+}
